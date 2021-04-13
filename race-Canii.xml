@@ -4,7 +4,7 @@
 		<name>Canii</name>
 		<description></description>
 	    <update version="1.0">
-			<file name="race-Canii.xml" url=""/>
+			<file name="race-Canii.xml" url="https://raw.githubusercontent.com/MasterSquinch/Canii/main/race-Canii.xml"/>
 		</update>
 	</info>
 
