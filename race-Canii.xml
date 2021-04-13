@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Canii</name>
+		<description></description>
+	    <update version="1.0">
+			<file name="race-Canii.xml" url=""/>
+		</update>
+	</info>
+
+  <element name="Canii" type="Race" source="Homebrew" id="ID_HMBRW_RACE_CANII">
+    <description>
+      <h4>CANII</h4>
+      <p>Aside from the great dane subrace-which normally almost always exceed six feet of height-canii are a shorter kind of humanoid, with most of them not surpassing four feet of height, though a few may. They are roughly around the same size as halflings, however they have the appearance of dogs that walk on two legs. Due to this, they have a large variety of appearances, a list too long to be kept in a small page. The canii race's history is one that has existed in the feywild, for a long period of time, living among the other beings in the plane in harmony, until the formation of the race known as the tabaxi. When the canii had learned of this race's formation, centuries after their occurrence, the canii all had a mass leave of the feywild, to prepare for a great war, for cats and dogs naturally were foes. However, years after they had all left, as they prepared, they had learned that the tabaxi were more peaceful than they had first thought, though now the race was stranded on the new material plane, curious as to what this new world had in store for them. Not many years have passed after their appearance, less than several decades, so many still feel that the material plane is a brand new, and terrifying, world. Canii are a very social species, with them growing incredibly depressive and sluggish when they are separated from other creatures for a long period of time. Due to this, groups are often closer than family, and are called 'packs', with one leader being the alpha. These packs are usually only consisted of canii, however if the pack all unanimously trusts another humanoid, they may be allowed into the pack. Due to their fey heritage, the canii are typically regarded as being friendly companions by most humanoids that either originate or have a positive connection with the feywild. Many races also enjoy the canii as companions, seeing them as cuddly and friendly beings that deserve their affection. However, the tabaxi still hold a grudge against the canii, due to their eagerness to start a war with their race, causing a lot of tension between them and the canii. </p> 
+      <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1, and your Charisma score increases by 2.<br/>
+      <span class="feature">Age.</span>Canii do not live quite as long as humans do, however to compensate their maturity comes faster than most races. Canii are considered mature around age 10, and most only live to be 60 or rarely 70 years old.<br/>
+	  <span class="feature">Alignment</span>Canii naturally possess the urge to be loyal to many things, causing them to lean towards Lawful alignments.<br/>
+      <span class="feature">Size.</span>Most of the Canii race are smaller than most humans, around the same height and weight as halflings. Your size is Small<br/>
+      <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+      <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You are red-green colorblind, and see the world in shades of yellow, brown, blue, and grey.<br/>
+      <span class="feature">Keen Smell.</span>You have advantage on Perception checks that rely on smell.<br/>
+      <span class="feature">Bite.</span>You have sharp canine teeth, allowing you to tear through flesh. Grappling and unarmed strikes deal 1d4 piercing damage, and you may use your Dexterity modifier instead of Strength if you choose.<br/>
+      <span class="feature">Zoomies!</span>You get uncontrollably excited. For three turns your movement speed doubles, but you are unable to use your weapons- you can only pick up objects, and use Bite. You may only drop an object picked up while under the influence of this ability in order to use Bite, or to pick up another item.<br/>
+      <span class="feature">Overwhelming Fluff.</span>You have proficiency in Persuasion.<br/>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters>
+      <set name="height" modifier="2d8">2'0"</set>
+      <set name="weight" modifier="2d6">25 lb.</set>
+    </setters>
+    <rules>
+      <stat name="constitution" value="1"/>
+      <stat name="charisma" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <select type="Language" name="ID_LANGUAGE_SYLVAN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_PERSUASION" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_CANII_KEEN_SMELL" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_CANII_BITE" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_CANII_ZOOMIES" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_CANII_OVERWHELMING_FLUFF" />
+    </rules>
+  </element>
+  
+   <element name="Keen Smell" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_CANII_KEEN_SMELL">
+    <description>
+			<p> You have advantage on Perception checks that rely on smell.</p>
+        </description>
+  </element>
+
+  <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_CANII_BITE">
+    <description>
+			<p> You have sharp canine teeth, allowing you to tear through flesh. Grappling and unarmed strikes deal 1d4 piercing damage, and you may use your Dexterity modifier instead of Strength if you choose.</p>
+		</description>
+  </element>
+
+  <element name="Zoomies" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_CANII_ZOOMIES">
+   <description>
+        <p> You get uncontrollably excited. For three turns your movement speed doubles, but you are unable to use your weapons- you can only pick up objects, and use Bite. You may only drop an object picked up while under the influence of this ability in order to use Bite, or to pick up another item.</P>
+        </description>
+    <rules>
+        <stat name="innate speed:sprint" value="60" bonus="base">
+    </rules>
+  </element>
+
+<element name="Overwhelming Fluff" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_CANII_OVERWHELMING_FLUFF">
+    <description>
+			<p> You have advantage on Perception checks that rely on smell.</p>
+        </description>
+  </element>
+
+</elements>
