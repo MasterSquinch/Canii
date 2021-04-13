@@ -62,7 +62,7 @@
         <p> You get uncontrollably excited. For three turns your movement speed doubles, but you are unable to use your weapons- you can only pick up objects, and use Bite. You may only drop an object picked up while under the influence of this ability in order to use Bite, or to pick up another item.</p>
         </description>
     <rules>
-        <stat name="innate speed:sprint" value="60" bonus="base">
+        <stat name="innate speed:sprint" value="60" bonus="base" />
     </rules>
   </element>
 
